@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -22,47 +22,147 @@
         <div class="logo">
           <a href=""><img src="images/logo.svg" alt="" /></a>
         </div>
-        <div class="navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About US</a></li>
-            <li><a href="#">service</a></li>
-            <li><a href="#">project</a></li>
-          </ul>
-        </div>
-        <!-- 
-          
-         -->
+        <nav>
+          <div class="navigation header-nav-styles">
+            <ul>
+              <li><a href="#" class="nav-list active">Home</a></li>
+              <li><a href="#" class="nav-list">About US</a></li>
+              <li><a href="#" class="nav-list">service</a></li>
+              <li><a href="#" class="nav-list">project</a></li>
+            </ul>
+          </div>
+        </nav>
         <div class="contact">
-          <form action="/action_page.php">
+          <form action="#">
             <select id="language" name="language">
               <option value="Engliash">English</option>
               <option value="Georgian">Georgian</option>
             </select>
-
             <input type="submit" value="Contact Us" />
           </form>
         </div>
       </div>
-      <!--  -->
     </header>
-    <!-- <main>
-      <section class="section-wrap">
+    <main>
+      <section class="section-1-wrap">
         <div class="section-1">
           <div class="first-title">
-            <h1>Lorem Ipsum</h1>
-          </div>
-          <div class="first-paragraf">
+            <h1>
+              We Prepare <br />
+              For The <span class="header-span">Future</span>
+            </h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type
+              We provide the best architectural design, contruction, and
+              building maintance services for you.
             </p>
+          </div>
+          <div class="button-div">
+            <button type="button">
+              Our Services
+              <img
+                class="centering-icons"
+                src="images/arrow-right-circle.svg"
+                alt=""
+              />
+            </button>
+            <button type="button" id="view-project-button">Our Services</button>
           </div>
         </div>
       </section>
-      <section></section>
-    </main> -->
+      <section class="section-2-wrap">
+        <div class="section-2">
+          <div class="title">
+            <h2>Featured Project</h2>
+
+            <nav>
+              <div class="navigation sec-2-nav-styles">
+                <ul>
+                  <li><a class="active-black" href="">All Works</a></li>
+                  <li><a href="">Construction</a></li>
+                  <li><a href="">Architecture</a></li>
+                  <li><a href="">Building</a></li>
+                  <li><a href="">Renovations</a></li>
+                  <li><a href="">Interior</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="pic-block-wrap">
+            <!-- 1block -->
+            <div class="img-block block-1">
+              <div class="img-block-title">
+                <h3>Skyskuy Tower</h3>
+                <h4>Renovation & Architecture</h4>
+              </div>
+            </div>
+            <!-- 2block -->
+            <div class="img-block block-2">
+              <div class="img-block-title">
+                <h3>The Fallingwater House</h3>
+                <h4>Building & Interior</h4>
+              </div>
+            </div>
+            <!-- 3block -->
+            <div class="img-block block-3">
+              <div class="img-block-title">
+                <h3>The Orange Apartemen</h3>
+                <h4>Construction & Interior</h4>
+              </div>
+            </div>
+          </div>
+          <div class="all-projects-link">
+            <a href="#"
+              >Explore All Projects
+              <img
+                class="centering-icons"
+                src="images/circle-arrow-right-solid.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section class="section-3-wrap">
+        <div class="section-3">
+          <div class="sec-3-title">
+            <h3>What Our Client Says</h3>
+            <p class="sec-3-par-1">
+              I am very satisfied with the services. Their team is very
+              professional and efficient in completing our project on time and
+              at a very affordable cost. The quality of their work is very good
+              and I highly recommend this company for any construction project.
+            </p>
+            <p class="sec-3-par-2">Tom DeLonge</p>
+            <p class="sec-3-par-3">CEO, Lexmark</p>
+          </div>
+          <div class="sec-3-header">
+            <h2>Leading Way In Building & Civil Construction</h2>
+          </div>
+
+          <!-- forms -->
+          <div class="form-div">
+            <form id="form-sec-3" action="/action_page.php">
+              <h4 class="first-form-heading">Request A Quote</h4>
+              <p class="first-form-par">
+                Complete control over products allow us to our customers the
+                best quality prices and services. We take great pride in
+                everything that we do in Jhontraktor
+              </p>
+
+              <input type="text" id="name" name="name" value="Name" />
+              <input type="email" id="email" name="email" value="email" />
+              <input type="tel" id="phone" name="phone" value="phone" />
+              <select name="serice" id="serice">
+                <option value="">Select Your Service--</option>
+              </select>
+              <textarea rows="4" cols="50" name="comment" form="usrform">
+                Additional Details!</textarea
+              >
+              <input type="submit" id="submit-form" />
+            </form>
+            <div class="second-form"></div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
